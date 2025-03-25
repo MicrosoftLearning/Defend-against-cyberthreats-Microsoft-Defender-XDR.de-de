@@ -84,7 +84,7 @@ In dieser Aufgabe simulieren Sie einen Angriff auf die WIN1-VM (durch Ausführen
 
 1. Navigieren Sie zur Verwendung des Skripts in **Windows PowerShell (Administrator)** zum Ordner *\Users\Admin\Desktop\Allfiles*, geben Sie *.\AttackScript.ps1* ein, und drücken Sie die **EINGABETASTE**, um es auszuführen. Geben Sie als Nächstes **R** ein, und drücken Sie die **EINGABETASTE**, um es *einmal auszuführen*.
 
-1. Das Skript erzeugt eine Ausgabe mit mehreren Zeilen und die Meldung, dass *Domänencontroller in der Domäne nicht aufgelöst werden konnten*. Ein paar Sekunden später wird die *Editor*-App geöffnet. Ein simulierter Angriffscode wird im Editor eingefügt. Lassen Sie die automatisch generierte Editor-Instanz geöffnet, um das vollständige Szenario zu erleben. Der simulierte Angriffscode versucht, mit einer externen IP-Adresse zu kommunizieren (simuliert einen C2-Server).
+1. Das Skript erzeugt eine Ausgabe mit mehreren Zeilen und die Meldung, dass *Domänencontroller in der Domäne nicht aufgelöst werden konnten*. Ein paar Sekunden später wird die *Editor*-App geöffnet. Ein simulierter Angriffscode wird in den Editor eingeschleust (die Editor-Seite ist leer). Lassen Sie die automatisch generierte Editor-Instanz geöffnet, um das vollständige Szenario zu erleben. Der simulierte Angriffscode versucht, mit einer externen IP-Adresse zu kommunizieren (simuliert einen C2-Server).
 
 ### Aufgabe 4: Untersuchen des simulierten Angriffs als einzelner Incident
 

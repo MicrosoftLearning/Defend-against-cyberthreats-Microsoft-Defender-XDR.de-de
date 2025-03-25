@@ -113,7 +113,7 @@ In dieser Aufgabe konfigurieren Sie Gerätegruppen, die die Zugriffssteuerung un
     |Allgemeine Einstellung|Wert|
     |---|---|
     |Name der Gerätegruppe|**Regulär**|
-    |Wartungsebene|Vollständig – Automatisches Beheben von Bedrohungen|
+    |Wartungsebene|Vollständig – Wartung|
 
 1. Wählen Sie **Weiter** aus.
 
