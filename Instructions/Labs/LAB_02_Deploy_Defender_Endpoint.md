@@ -20,7 +20,7 @@ Diese Übung dauert ca. **15** Minuten.
 
 ### Aufgabe 1: Initialisieren von Microsoft Defender for Endpunkt
 
-In dieser Aufgabe führen Sie die Initialisierung von Microsoft Defender for Endpoint aus.
+In dieser Aufgabe führen Sie die Initialisierung von Microsoft Defender for Endpoint durch.
 
 1. Melden Sie sich als Admin bei der virtuellen Maschine **WIN1** mit dem Passwort: **Pa55w.rd** an.  
 
@@ -75,28 +75,43 @@ In dieser Aufgabe integrieren Sie ein Gerät in Microsoft Defender for Endpoint 
 
 In dieser Aufgabe konfigurieren Sie Rollen für die Verwendung mit Gerätegruppen.
 
-1. Erweitern Sie in der linken Menüleiste des Microsoft Defender XDR-Portals den Abschnitt **System** und wählen Sie **Einstellungen**, dann **Endpunkte** aus.
+1. Erweitern Sie im Navigationsmenü des Microsoft Defender XDR-Portals den Abschnitt **System** und wählen Sie **Einstellungen**, dann **Microsoft Defender XDR** aus.
 
-1. Wählen Sie im Bereich „Berechtigungen“ die Option **Rollen** aus.
+1. Wählen Sie **Berechtigungen und Rollen** unter dem Abschnitt *Konto* aus.
 
-1. Wählen Sie die Schaltfläche **Rollen aktivieren** aus.
+1. Scrollen Sie auf der Seite nach unten und wählen Sie den Link **Zu Berechtigungen und Rollen wechseln**.
 
-1. Wählen Sie **+ Rolle hinzufügen** aus.
+1. Auf der Seite *Berechtigungen und Rollen* wählen Sie **+ Benutzerdefinierte Rolle erstellen**.
 
-1. Geben Sie im Dialogfeld „Rolle hinzufügen“ die folgenden Daten ein:
+1. Auf der Seite *Grundlagen* im Dialogfeld „Rolle hinzufügen“ geben Sie Folgendes ein:
 
-    |Allgemeine Einstellung|Wert|
+    |Grundlegende Einstellungen|Wert|
     |---|---|
     |Rollenname|**Support der Ebene 1**|
-    |Berechtigungen|Livereaktionsfunktionen – Erweitert|
 
 1. Wählen Sie **Weiter** aus.
 
-1. Wählen Sie oben die Registerkarte **Zugewiesene Benutzergruppen** aus. Wählen Sie **sg-IT** und dann **Ausgewählte Gruppen hinzufügen** aus. Stellen Sie sicher, dass sie unter *Azure AD-Benutzergruppen mit dieser Rolle* angezeigt wird.
+1. Auf der Seite **Berechtigungen** wählen Sie die folgenden Berechtigungen aus:
+
+    |Berechtigungsgruppe|Beschreibung|  |Sicherheitsvorgänge|Verwaltet alltägliche Vorgänge und reagiert auf Vorfälle und Empfehlungen|
+
+1. Wählen Sie auf der Popout-Seite für *Sicherheitsvorgänge* das Optionsfeld **Alle Lese- und Verwaltungsrechte**.
+
+1. Wählen Sie **Anwenden** und anschließend **Weiter**.
+
+1. Wählen Sie auf der Seite **Benutzer und Datenquellen zuweisen** die Schaltfläche **Zuweisung erstellen**.
+
+1. Im Dialog *Zuweisung hinzufügen* geben Sie Folgendes ein:
+
+    |Zuweisungseinstellungen|Wert|
+    |---|---|
+    |Zuweisungsname|**Support der Ebene 1**|
+    |Employees|****sg-IT**|
+    |Datenquellen|**Standardeinstellung beibehalten**|
+
+1. Wählen Sie **Hinzufügen** aus und dann **Weiter**.
 
 1. Klicken Sie auf **Senden** und dann auf **Fertig**, wenn Sie fertig sind.
-
-    >**Hinweis:** Wenn Sie die Fehlermeldung *„Der Benutzer kann diese Aktion nicht ausführen, da sein UserAuthEnforcementMode Rbac ist und diese Aktion eine der folgenden Bedingungen erfordert: RbacV2“* erhalten, klicken Sie auf **OK** und versuchen Sie es erneut.
 
 ### Aufgabe 4: Konfigurieren von Gerätegruppen
 
@@ -117,9 +132,9 @@ In dieser Aufgabe konfigurieren Sie Gerätegruppen, die die Zugriffssteuerung un
 
 1. Wählen Sie **Weiter** aus.
 
-1. Wählen Sie auf der Registerkarte „Geräte“ für die Betriebssystemvoraussetzung **Windows 10** und klicken Sie auf **Weiter**.
+1. Wählen Sie auf der Registerkarte „Geräte“ für die Betriebssystembedingung **Windows 11** aus und klicken Sie auf **Weiter**.
 
-    >**Hinweis:** Einige Lab-Hostinganbieter haben möglicherweise *Windows 11*-Images für WIN1 konfiguriert. Sie können eines oder beide auswählen.
+    >**Hinweis:** Einige Lab-Hosting-Anbieter haben möglicherweise noch *Windows 10* Images für WIN1. Sie können eines oder beide auswählen.
 
 1. Auf der Registerkarte „Gerätevorschau“ könnte die Schaltfläche *Vorschau anzeigen* den virtuellen Computer WIN1 anzeigen, aber höchstwahrscheinlich sind die Daten noch nicht ausgefüllt. Klicken Sie auf **Weiter**, um fortzufahren.
 
@@ -127,7 +142,7 @@ In dieser Aufgabe konfigurieren Sie Gerätegruppen, die die Zugriffssteuerung un
 
 1. Klicken Sie auf **Senden** und dann auf **Fertig**, wenn Sie fertig sind.
 
-1. Die Gerätegruppenkonfiguration wurde geändert. Klicken Sie auf **Änderungen übernehmen**, um die Übereinstimmungen zu überprüfen und die Gruppierungen neu zu berechnen.
+1. Wählen Sie in der Informationsnachricht *Gerätegruppenkonfiguration wurde die Konfiguration geändert. Änderungen anwenden, um Übereinstimmungen zu überprüfen und Gruppierungen neu zu berechnen* **Änderungen anwenden** aus.
 
 1. Sie haben jetzt zwei Gerätegruppen: die von Ihnen erstellte Gruppe „Regulär“ und die Gruppe „Nicht gruppierte Geräte (Standard)“ mit der gleichen Korrekturstufe.
 
